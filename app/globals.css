@@ -1,27 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@800&family=Noto+Sans:wght@400;500;600&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  font-family: "Big Shoulders Display", sans-serif;
+  font-family: "Noto Sans", sans-serif;
+}
+
+@layer utilities {
+  .max-container {
+    @apply mx-auto max-w-[1440px];
+  }
+
+  .padding-container {
+    @apply px-6 lg:px-20 3xl:px-0;
+  }
+
+  .btn_dark {
+    @apply bg-[#121B22] px-8 py-4 text-white transition-all duration-500 ease-in-out hover:text-[#121B22] hover:bg-[#AFFF00] rounded-full;
+  }
+
+  .btn_icon {
+    @apply bg-[#121B22] border-solid border-2 border-[#B9B9B9] w-[120px] h-[120px] text-white transition-all duration-500 ease-in-out hover:bg-[#AFFF00] rounded-full;
+  }
+
+  /* FONTS */
+  .regular-14 {
+    @apply text-[14px] font-[400];
+  }
+  .regular-18 {
+    @apply text-[18px] font-[400];
+  }
+
+  .medium-18 {
+    @apply text-[18px] font-[500];
+  }
+
+  .medium-29 {
+    @apply text-[29.12px] font-[500];
+  }
+
+  .medium-76 {
+    @apply text-[76.24px] font-[500];
+  }
+
+  .semi-bold-18 {
+    @apply text-[18px] font-[600];
+  }
+
+  .semi-bold-29 {
+    @apply text-[29.12px] font-[600];
+  }
+
+  .semi-bold-47 {
+    @apply text-[47.12px] font-[600];
+  }
+
+  .semi-bold-76 {
+    @apply text-[76.24px] font-[600];
+  }
+
+  .bold-18 {
+    @apply text-[18px] font-[700];
+  }
+
+  .bold-29 {
+    @apply text-[29.12px] font-[700];
+  }
+
+  .bold-76 {
+    @apply text-[76.24px] font-[700];
+  }
+
+  .extra-desk {
+    @apply text-[123.36px] font-[800] uppercase;
+  }
+  .extra-tablet {
+    @apply text-[76.24px] font-[800] uppercase;
+  }
+  .extra-mobil {
+    @apply text-[47.12px] font-[800] uppercase;
+  }
 }
