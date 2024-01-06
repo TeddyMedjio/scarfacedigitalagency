@@ -32,13 +32,14 @@ const Dropdown = () => {
           <p className="medium-18 text-gray-400 mb-10 uppercase">Menu</p>
           {NAV_LINKS.map((link) => (
             <li
+              onClick={() => setToggle(!toggle)}
               key={link.key}
               className="text-6xl font-header text-blu-50 pb-10"
             >
               <Link
                 href={link.href}
                 key={link.key}
-                className={`${pathname === `${link.href}`} `}
+                className={`link ${pathname === `${link.href}`}`}
               >
                 <span>{link.label}</span>
               </Link>
