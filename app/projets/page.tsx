@@ -5,7 +5,11 @@ export const metadata: Metadata = {
 };
 
 const page = () => {
-  return <div>page</div>;
+  return (
+    <div className="max-container padding-container pt-[120px] lg:pt-[155px]">
+      page
+    </div>
+  );
 };
 
 export default page;

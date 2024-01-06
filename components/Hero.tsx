@@ -5,7 +5,7 @@ const Hero = () => {
     <div>
       {" "}
       <main className=" bg-green-50">
-        <div className="max-container padding-container pt-[155px]">
+        <div className="max-container padding-container pt-[120px] lg:pt-[155px]">
           <div className="flex flex-col lg:flex-row lg:items-center relative">
             <Image
               className="hidden md:block rounded-tl-lg rounded-tr-[100px] rounded-bl-[4px] rounded-br-[4px] lg:absolute"
