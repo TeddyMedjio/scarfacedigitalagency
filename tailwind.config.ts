@@ -41,19 +41,15 @@ const config = {
       screens: {
         "3xl": "1680px",
       },
+
       keyframes: {
-        "accordion-down": {
-          from: { height: "0" },
-          to: { height: "var(--radix-accordion-content-height)" },
-        },
-        "accordion-up": {
-          from: { height: "var(--radix-accordion-content-height)" },
-          to: { height: "0" },
+        wiggle: {
+          "0%": { transform: "rotate(-360deg)" },
+          "100%": { transform: "rotate(0deg)" },
         },
       },
       animation: {
-        "accordion-down": "accordion-down 0.2s ease-out",
-        "accordion-up": "accordion-up 0.2s ease-out",
+        wiggle: "wiggle 4s ease-in-out infinite",
       },
     },
   },

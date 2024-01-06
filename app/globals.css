@@ -78,9 +78,13 @@ body {
     @apply text-[123.36px] font-[800] uppercase;
   }
   .extra-tablet {
-    @apply text-[76.24px] font-[800] uppercase;
+    @apply text-[96.24px] font-[800] uppercase;
   }
   .extra-mobil {
     @apply text-[47.12px] font-[800] uppercase;
   }
+}
+
+.title {
+  font-size: clamp(47.12px, 11vw, 130.36px);
 }
