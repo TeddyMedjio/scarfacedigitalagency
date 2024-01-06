@@ -1,8 +1,7 @@
 import type { Metadata } from "next";
-import { Noto_Sans } from "next/font/google";
 import "./globals.css";
-
-const noto = Noto_Sans({ subsets: ["latin"] });
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
   title: {
@@ -57,7 +56,11 @@ export default function RootLayout({
 
       <meta name="twitter:author" content="@scarfacedigitalagency" />
       <meta name="twitter:site" content="@scarfacedigitalagency" />
-      <body className={noto.className}>{children}</body>
+      <body>
+        <Navbar />
+        <main className="relative overflow-hidden">{children}</main>
+        <Footer />
+      </body>
     </html>
   );
 }
