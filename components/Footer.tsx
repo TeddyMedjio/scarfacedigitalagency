@@ -12,7 +12,7 @@ const Footer = () => {
         alt="dessin"
         className="hidden md:block absolute right-20 h-full w-auto"
       />
-      <div className="max-container padding-container py-24">
+      <div className="max-container padding-container py-10 md:py-24">
         <div className="flex flex-col md:flex-row lg:items-center gap-5 md:gap-10">
           <Link href="/">
             <Image
@@ -22,7 +22,7 @@ const Footer = () => {
               alt="logo blanc"
             />
           </Link>
-          <p className="regular-18 text-gra-50">
+          <p className="regular-14 md:regular-18 text-gra-50">
             One of the most important pieces of the <br /> great product
             experience is you.
           </p>
@@ -30,7 +30,7 @@ const Footer = () => {
         <h2 className="semi-bold-29 md:semi-bold-47 lg:semi-bold-76 text-white py-5">
           Limitless by design
         </h2>
-        <div className="flex flex-col md:flex-row md:items-center gap-5">
+        <div className="flex flex-col md:flex-row items-start md:items-center gap-3 md:gap-5">
           <p className="bold-18 text-white">Write to us at</p>
           <Link
             href="mailto:hello.medjio.me"
