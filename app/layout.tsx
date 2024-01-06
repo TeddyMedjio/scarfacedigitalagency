@@ -45,7 +45,7 @@ export default function RootLayout({
       />
       <meta
         property="twitter:image"
-        content="https://scarfacedigitalagency.com/images/meta-banner-medjio.jpg"
+        content="https://scarfacedigitalagency.com/images/meta-banner.jpg"
       />
       <meta name="twitter:card" content="summary_large_image" />
 
