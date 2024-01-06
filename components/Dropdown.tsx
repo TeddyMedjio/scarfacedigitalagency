@@ -16,8 +16,10 @@ const Dropdown = () => {
       </button>
 
       <div
-        className={`bg-white w-full h-screen absolute right-0 -top-8 z-50  transition-transform duration-700 ${
-          toggle ? "translate-x-0" : "translate-x-[1500px]"
+        className={`bg-white w-full h-screen absolute right-0 -top-8 z-50  transition-all duration-700 ease-in-out ${
+          toggle
+            ? "translate-x-0 opacity-100"
+            : "translate-x-[1500px] md:opacity-100 opacity-0"
         }`}
       >
         <button
