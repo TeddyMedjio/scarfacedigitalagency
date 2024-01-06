@@ -29,7 +29,10 @@ const Dropdown = () => {
         <ul className="mt-28 ml-10 flex flex-col -z-50">
           <p className="medium-18 text-gray-400 mb-10 uppercase">Menu</p>
           {NAV_LINKS.map((link) => (
-            <li className="text-6xl font-header text-blu-50 pb-10">
+            <li
+              key={link.key}
+              className="text-6xl font-header text-blu-50 pb-10"
+            >
               <Link
                 href={link.href}
                 key={link.key}
