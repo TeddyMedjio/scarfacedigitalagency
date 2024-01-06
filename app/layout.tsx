@@ -30,7 +30,7 @@ export default function RootLayout({
       />
       <meta
         property="og:image"
-        content="https://scarfacedigitalagency.vercel.app/images/meta-banner.jpg"
+        content="https://res.cloudinary.com/dqfd5g2fd/image/upload/v1704543223/xhlqytxwsglklasnyzw0.jpg"
       />
       <meta property="og:site_name" content="Scarface Digital Agency" />
       <meta property="og:locale" content="en" />
@@ -45,7 +45,7 @@ export default function RootLayout({
       />
       <meta
         property="twitter:image"
-        content="https://scarfacedigitalagency.vercel.app/images/meta-banner.jpg"
+        content="https://res.cloudinary.com/dqfd5g2fd/image/upload/v1704543223/xhlqytxwsglklasnyzw0.jpg"
       />
       <meta name="twitter:card" content="summary_large_image" />
 
