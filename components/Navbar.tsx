@@ -26,7 +26,7 @@ const Navbar = () => {
     <nav
       className={
         navbar
-          ? " w-full pt-[120px] fixed top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-50 backdrop-blur-sm bg-white/30 transition-all duration-300 ease-in-out"
+          ? " w-full pt-[120px] fixed top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-50 backdrop-blur-sm bg-green-50/25 transition-all duration-300 ease-in-out"
           : "max-container w-full mt-[60px] fixed top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-50"
       }
     >

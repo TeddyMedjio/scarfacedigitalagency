@@ -44,12 +44,12 @@ const Footer = () => {
         <p className=" text-[10px] md:regular-14 text-gra-50">
           {" "}
           <span className="text-green-50">
-            © 2024 Scarface Digital Agency
+            © {new Date().getFullYear()} Scarface Digital Agency
           </span>{" "}
-          I Design & Develop by{" "}
-          <span className="font-bold">
+          | Design & Develop by{" "}
+          <span className="font-bold text-white underline">
             <Link href="https://www.medjio.me/" target="blank">
-              Medjio.me
+              www.medjio.me
             </Link>
           </span>
         </p>

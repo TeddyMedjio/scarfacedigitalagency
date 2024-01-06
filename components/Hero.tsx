@@ -42,7 +42,7 @@ const Hero = () => {
           </div>
         </div>
         <div className="max-container padding-container mb-10">
-          <p className="regular-14 md:regular-18 text-blu-50 max-w-[701px]">
+          <p className="regular-14 md:regular-18 text-blu-50 max-w-[801px] lg:py-10">
             <span className="bold-18">Scarface Digital Agency</span> - is a
             branding and digital design boutique studio that creates products,
             services, and experiences for good companies. By partnering with
