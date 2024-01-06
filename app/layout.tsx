@@ -45,7 +45,7 @@ export default function RootLayout({
       />
       <meta
         property="twitter:image"
-        content="https://scarfacedigitalagency.com/images/meta-banner.jpg"
+        content="https://scarfacedigitalagency.vercel.app/images/meta-banner.jpg"
       />
       <meta name="twitter:card" content="summary_large_image" />
 
