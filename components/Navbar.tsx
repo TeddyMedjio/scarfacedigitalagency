@@ -5,12 +5,31 @@ import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import Dropdown from "./Dropdown";
+import { useState } from "react";
 
 const Navbar = () => {
+  const [navbar, setNavbar] = useState(false);
+
+  const changeBackground = () => {
+    if (window.scrollY >= 185) {
+      setNavbar(true);
+    } else {
+      setNavbar(false);
+    }
+  };
+
+  window.addEventListener("scroll", changeBackground);
+
   const pathname = usePathname();
   return (
-    <nav className="max-container w-full mt-[60px] fixed top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-50">
-      <div className=" flex items-center justify-between w-full pb-4 padding-container">
+    <nav
+      className={
+        navbar
+          ? " w-full pt-[120px] fixed top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-50 backdrop-blur-sm bg-white/30 transition-all duration-300 ease-in-out"
+          : "max-container w-full mt-[60px] fixed top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-50"
+      }
+    >
+      <div className="max-container flex items-center justify-between w-full pb-4 padding-container">
         <Link href="/">
           <Image
             src="/logo.svg"
@@ -47,7 +66,7 @@ const Navbar = () => {
           Contact
         </Link>
       </div>
-      <div className="px-0 lg:px-20 2xl:px-0">
+      <div className="max-container px-0 lg:px-20 2xl:px-0">
         <div className="h-[1px] w-full bg-blu-50 "></div>
       </div>
     </nav>
