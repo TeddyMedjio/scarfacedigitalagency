@@ -8,6 +8,7 @@ import Dropdown from "./Dropdown";
 import { useState } from "react";
 
 const Navbar = () => {
+  const pathname = usePathname();
   const [navbar, setNavbar] = useState(false);
 
   const changeBackground = () => {
@@ -18,9 +19,9 @@ const Navbar = () => {
     }
   };
 
-  window.addEventListener("scroll", changeBackground);
+  if (typeof window !== "undefined")
+    window.addEventListener("scroll", changeBackground);
 
-  const pathname = usePathname();
   return (
     <nav
       className={
