@@ -30,7 +30,7 @@ export default function RootLayout({
       />
       <meta
         property="og:image"
-        content="https://medjio.me/images/meta-banner-medjio.jpg"
+        content="https://scarfacedigitalagency.vercel.app/images/meta-banner.jpg"
       />
       <meta property="og:site_name" content="Scarface Digital Agency" />
       <meta property="og:locale" content="en" />
