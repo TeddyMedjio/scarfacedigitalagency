@@ -19,7 +19,7 @@ const Hero = () => {
               Where great ideas
             </h1>
           </div>
-          <div className=" gap-5 flex flex-col lg:flex-row lg:items-center md:-mt-10">
+          <div className=" gap-5 flex flex-col lg:flex-row lg:items-center -mt-4 md:-mt-10">
             <h1 className="title text-blu-50 whitespace-nowrap font-header uppercase ">
               meet great designs{" "}
             </h1>
