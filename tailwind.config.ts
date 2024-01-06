@@ -37,7 +37,6 @@ const config = {
           50: "#B7BABC",
         },
       },
-
       screens: {
         "3xl": "1680px",
       },

@@ -58,7 +58,7 @@ export default function RootLayout({
       <meta name="twitter:site" content="@scarfacedigitalagency" />
       <body>
         <Navbar />
-        <main className="relative overflow-hidden">{children}</main>
+        <main className="relative overflow-hidden antialiased">{children}</main>
         <Footer />
       </body>
     </html>

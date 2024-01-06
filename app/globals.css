@@ -42,6 +42,10 @@ body {
     @apply text-[29.12px] font-[500];
   }
 
+  .medium-47 {
+    @apply text-[47.12px] font-[500];
+  }
+
   .medium-76 {
     @apply text-[76.24px] font-[500];
   }

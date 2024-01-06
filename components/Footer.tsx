@@ -1,21 +1,59 @@
+import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 const Footer = () => {
   return (
-    <div>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, accusantium
-      deleniti. Enim consequatur sunt, omnis beatae adipisci ut repudiandae
-      soluta quo dolore dolor ad unde laudantium. Non quod sit consectetur!
-      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque veritatis
-      fugiat tempora asperiores laborum et illum, consectetur ipsa vero optio
-      atque deleniti beatae quasi minus! Doloremque animi voluptatum doloribus
-      obcaecati. Lorem ipsum dolor sit amet consectetur adipisicing elit.
-      Laborum architecto, hic sed similique facilis, quisquam suscipit magni
-      explicabo ex mollitia, beatae excepturi dolorem ut dignissimos voluptate
-      laudantium harum fugit obcaecati. Lorem ipsum, dolor sit amet consectetur
-      adipisicing elit. Ea amet eius iusto recusandae sapiente error quam omnis
-      quo rem provident, magnam illo eaque dolorem quaerat enim ducimus
-      inventore vel exercitationem!
+    <div className="bg-blu-70 relative">
+      <Image
+        src="/graph.svg"
+        height={0}
+        width={0}
+        alt="dessin"
+        className="hidden md:block absolute right-20 h-full w-auto"
+      />
+      <div className="max-container padding-container py-24">
+        <div className="flex flex-col md:flex-row lg:items-center gap-5 md:gap-10">
+          <Link href="/">
+            <Image
+              src="/logo_initial.svg"
+              height={60}
+              width={109}
+              alt="logo blanc"
+            />
+          </Link>
+          <p className="regular-18 text-gra-50">
+            One of the most important pieces of the <br /> great product
+            experience is you.
+          </p>
+        </div>
+        <h2 className="semi-bold-29 md:semi-bold-47 lg:semi-bold-76 text-white py-5">
+          Limitless by design
+        </h2>
+        <div className="flex flex-col md:flex-row md:items-center gap-5">
+          <p className="bold-18 text-white">Write to us at</p>
+          <Link
+            href="mailto:hello.medjio.me"
+            className="text-white border-[1px] border-solid border-green-50 px-4 py-[1px] rounded-full text-center"
+          >
+            hello@scarfacedigitalagency.com
+          </Link>
+        </div>
+      </div>
+      <div className="padding-container max-container pb-3">
+        <p className=" text-[10px] md:regular-14 text-gra-50">
+          {" "}
+          <span className="text-green-50">
+            © 2024 Scarface Digital Agency
+          </span>{" "}
+          I Design & Develop by{" "}
+          <span className="font-bold">
+            <Link href="https://www.medjio.me/" target="blank">
+              Medjio.me
+            </Link>
+          </span>
+        </p>
+      </div>
     </div>
   );
 };
