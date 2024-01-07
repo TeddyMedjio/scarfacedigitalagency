@@ -13,7 +13,7 @@ import { useState } from "react";
 const page = () => {
   const [loading, setLoading] = useState(4);
 
-  const ShowMore = () => {
+  const showMore = () => {
     setLoading(loading + loading);
   };
 
@@ -80,7 +80,7 @@ const page = () => {
       <div className="flex items-center justify-center pb-10">
         <button
           className="regular-18 text-blu-50 bg-green-50 px-8 py-2 rounded-full"
-          onClick={() => ShowMore()}
+          onClick={() => showMore()}
         >
           Show more
         </button>
