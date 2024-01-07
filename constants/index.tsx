@@ -9,24 +9,24 @@ export const NAV_LINKS = [
 // WORK SECTION
 export const WORK = [
   {
-    title: "Notary. Website",
+    title: "Notary • Website",
     img: "/notary.jpg",
-    description: "UI/UX Design - Website ",
+    description: "UI/UX Design • Website ",
   },
   {
-    title: "Emarketing. Agency",
+    title: "Emarketing Agency",
     img: "/emarketing.jpg",
-    description: "UI/UX Design - Website - Logotype - Branding",
+    description: "UI/UX Design • Website • Branding",
   },
   {
-    title: "Finsura. Assurance",
+    title: "Finsura • Assurance",
     img: "/finsura.jpg",
-    description: "UI/UX Design - Website ",
+    description: "UI/UX Design • Website ",
   },
   {
-    title: "OZ Coiffure. Barbershop",
+    title: "OZ Coiffure",
     img: "/ozcoiffure.jpg",
-    description: "UI/UX Design - Website - Logotype - Branding",
+    description: "UI/UX Design • Website • Branding",
   },
 ];
 
@@ -56,7 +56,7 @@ export const PROCESS = [
   {
     title: "04 Deliver",
     subtitle: "Design Delivery Stage",
-    icon: "/design.svg",
+    icon: "/deliver.svg",
     description:
       "As we finalise, we harness interactive prototypes and user insights to refine every touchpoint. The outcome? A flawless handoff.",
   },

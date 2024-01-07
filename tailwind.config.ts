@@ -26,7 +26,7 @@ const config = {
       colors: {
         green: {
           50: "#AFFF00",
-          60: "#334A0",
+          60: "#334A00",
         },
         blu: {
           50: "#0D1320",
