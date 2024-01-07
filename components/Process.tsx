@@ -20,7 +20,7 @@ const Process = () => {
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3 mt-20">
             {PROCESS.map((link) => (
-              <div className="bg-green-50 p-8 rounded">
+              <div key={link.title} className="bg-green-50 p-8 rounded">
                 <div className="h-[66px] w-[56px] mb-5">
                   <Image
                     src={link.icon}
