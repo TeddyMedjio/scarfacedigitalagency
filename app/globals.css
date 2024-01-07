@@ -63,6 +63,10 @@ body {
     @apply text-[29.12px] font-[600];
   }
 
+  .semi-bold-32 {
+    @apply text-[34.12px] font-[600];
+  }
+
   .semi-bold-47 {
     @apply text-[47.12px] font-[600];
   }

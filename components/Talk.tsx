@@ -2,7 +2,7 @@ import React from "react";
 
 const Talk = () => {
   return (
-    <div className="bg-[url('/pattern-1.jpg')] object-cover bg-center bg-no-repeat ">
+    <section className="bg-[url('/pattern-1.jpg')] object-cover bg-center bg-no-repeat ">
       <div className="max-container padding-container my-10">
         <h2 className="medium-29 md:medium-47 lg:medium-76 text-blu-50">
           Presenting superior services through{" "}
@@ -12,7 +12,7 @@ const Talk = () => {
           that dare to be different
         </h2>
       </div>
-    </div>
+    </section>
   );
 };
 

@@ -1,4 +1,5 @@
 import Hero from "@/components/Hero";
+import How from "@/components/How";
 import Talk from "@/components/Talk";
 
 export default function Home() {
@@ -6,6 +7,7 @@ export default function Home() {
     <>
       <Hero />
       <Talk />
+      <How />
     </>
   );
 }
