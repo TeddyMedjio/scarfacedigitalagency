@@ -4,7 +4,7 @@ export const metadata: Metadata = {
   title: "About ",
 };
 
-const page = () => {
+const Page = () => {
   return (
     <>
       <div className="max-container padding-container pt-[120px] lg:pt-[155px]">
@@ -16,4 +16,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;

@@ -10,7 +10,7 @@ import { useState } from "react";
 //   title: "Projets ",
 // };
 
-const page = () => {
+const Page = () => {
   const [loading, setLoading] = useState(4);
 
   const showMore = () => {
@@ -89,4 +89,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;
