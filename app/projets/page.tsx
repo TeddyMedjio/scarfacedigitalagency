@@ -79,7 +79,7 @@ const Page = () => {
       </div>
       <div className="flex items-center justify-center pb-10">
         <button
-          className="regular-18 text-blu-50 bg-green-50 px-8 py-2 rounded-full"
+          className="regular-18 text-blu-50 bg-green-50 px-8 py-2 rounded-full animate-pulse"
           onClick={() => showMore()}
         >
           Show more

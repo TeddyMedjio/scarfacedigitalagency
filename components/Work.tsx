@@ -1,7 +1,17 @@
+"use client";
+
 import { WORK } from "@/constants";
 import Image from "next/image";
+import { useState } from "react";
 
 const Work = () => {
+  const [loading, setLoading] = useState(4);
+
+  const showMore = () => {
+    setLoading(loading + loading);
+  };
+
+  const slice = WORK.slice(0, loading);
   return (
     <section className="bg-[#0B1217] overflow-hidden py-16 relative -z-20">
       <Image
@@ -40,7 +50,7 @@ const Work = () => {
         </h2>
       </div>
       <div className=" grid grid-cols-1 md:grid-cols-2 gap-20 max-container padding-container">
-        {WORK.map((link) => (
+        {slice.map((link) => (
           <div key={link.title} className=" space-y-5 pb-10">
             <p className="bold-29 text-white">{link.title}</p>
             <Image
@@ -57,6 +67,14 @@ const Work = () => {
             </div>
           </div>
         ))}
+      </div>
+      <div className="flex items-center justify-center pb-10 pt-20">
+        <button
+          className="medium-18 text-blu-50 bg-green-50 animate-pulse px-5 py-2 rounded-full"
+          onClick={() => showMore()}
+        >
+          Show more
+        </button>
       </div>
     </section>
   );

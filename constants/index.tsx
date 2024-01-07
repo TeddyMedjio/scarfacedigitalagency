@@ -39,7 +39,7 @@ export const WORK = [
     lien: "https://travel-theta-three.vercel.app/",
   },
   {
-    title: "Bange Bnak",
+    title: "Bange Bank",
     img: "/bange.jpg",
     description: "UI/UX Design • Website ",
     lien: "https://bange-vzjt.vercel.app/",
