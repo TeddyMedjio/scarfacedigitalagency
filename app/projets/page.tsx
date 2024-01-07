@@ -11,13 +11,13 @@ import { useState } from "react";
 // };
 
 const page = () => {
-  const [noOfElement, setnoOfElement] = useState(4);
+  const [loading, setLoading] = useState(4);
 
   const ShowMore = () => {
-    setnoOfElement(noOfElement + noOfElement);
+    setLoading(loading + loading);
   };
 
-  const slice = WORK.slice(0, noOfElement);
+  const slice = WORK.slice(0, loading);
 
   return (
     <section className=" bg-gray-100  relative -z-20 pt-[120px] lg:pt-[155px]">
