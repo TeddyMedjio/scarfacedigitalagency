@@ -12,21 +12,37 @@ export const WORK = [
     title: "Notary • Website",
     img: "/notary.jpg",
     description: "UI/UX Design • Website ",
+    lien: "https://notary-virid.vercel.app/",
   },
   {
     title: "Emarketing Agency",
     img: "/emarketing.jpg",
     description: "UI/UX Design • Website • Branding",
+    lien: "https://www.em-marketing.ch/",
   },
   {
-    title: "Finsura • Assurance",
-    img: "/finsura.jpg",
-    description: "UI/UX Design • Website ",
+    title: "InfinyEvent",
+    img: "/infinyevent.jpg",
+    description: "UI/UX Design • Branding ",
+    lien: "https://alwaysevents.vercel.app/",
   },
   {
     title: "OZ Coiffure",
     img: "/ozcoiffure.jpg",
     description: "UI/UX Design • Website • Branding",
+    lien: "https://barbershop-three-phi.vercel.app/",
+  },
+  {
+    title: "Travel",
+    img: "/travel.jpg",
+    description: "UI/UX Design • Website ",
+    lien: "https://travel-theta-three.vercel.app/",
+  },
+  {
+    title: "Bange Bnak",
+    img: "/bange.jpg",
+    description: "UI/UX Design • Website ",
+    lien: "https://bange-vzjt.vercel.app/",
   },
 ];
 
