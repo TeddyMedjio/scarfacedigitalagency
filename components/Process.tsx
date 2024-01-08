@@ -4,7 +4,7 @@ import Image from "next/image";
 const Process = () => {
   return (
     <div className="bg-blu-50 overflow-hidden">
-      <div className="max-container py-16">
+      <div className="max-container pt-16">
         <div className="max-container padding-container mb-20">
           <h2 className="semi-bold-32 md:semi-bold-76 flex items-center text-white">
             <span>

@@ -5,7 +5,7 @@ import Image from "next/image";
 import { useState } from "react";
 
 const Work = () => {
-  const [loading, setLoading] = useState(4);
+  const [loading, setLoading] = useState(2);
 
   const showMore = () => {
     setLoading(loading + loading);

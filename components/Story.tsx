@@ -51,7 +51,7 @@ const Story = () => {
       </div>
 
       {/* animation */}
-      <div className="my-20">
+      <div className="my-28">
         <Image
           src="/pointille.svg"
           height={170}

@@ -105,3 +105,68 @@ body {
 .title {
   font-size: clamp(47.12px, 11vw, 130.36px);
 }
+
+/* animation slide */
+.slider {
+  display: grid;
+  place-items: center;
+  position: relative;
+}
+
+.slide-track {
+  display: flex;
+  width: (119px * 18);
+  animation: scroll 40s linear infinite;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-200px * 9));
+  }
+}
+
+.slide {
+  height: 200px;
+  width: 200px;
+  display: flex;
+  align-items: center;
+  padding: 15px;
+}
+
+.slide > img {
+  width: 70%;
+  aspect-ratio: 3/2;
+  object-fit: contain;
+}
+
+.slide > img:hover {
+  transform: translateZ(20px);
+}
+
+.slider::before,
+.slider::after {
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  content: "";
+  height: 100%;
+  position: absolute;
+  width: 15%;
+  z-index: 2;
+}
+
+.slider::before {
+  left: 0;
+  top: 0;
+}
+
+.slider::after {
+  right: 0;
+  top: 0;
+  transform: rotateZ(180deg);
+}
