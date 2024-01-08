@@ -24,7 +24,7 @@ body {
   }
 
   .btn_dark {
-    @apply bg-[#0D1320] px-8 py-2 text-white transition-all duration-500 ease-in-out hover:text-[#0D1320] hover:bg-[#AFFF00] border-solid hover:border-[1px] hover:border-[#0D1320] rounded-full;
+    @apply bg-[#0D1320] px-8 py-2 text-white transition-all duration-500 ease-in-out hover:text-[#0D1320] hover:bg-[#AFFF00]  rounded-full;
   }
 
   .btn_icon {

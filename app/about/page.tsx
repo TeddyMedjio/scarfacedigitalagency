@@ -1,3 +1,5 @@
+import Great from "@/components/Great";
+import Story from "@/components/Story";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -6,13 +8,10 @@ export const metadata: Metadata = {
 
 const Page = () => {
   return (
-    <>
-      <div className="max-container padding-container pt-[120px] lg:pt-[155px]">
-        <h1 className="text-blu-50 extra-desk font-header">
-          where great ideas
-        </h1>
-      </div>
-    </>
+    <div className="max-container padding-container pt-[120px] lg:pt-[155px]">
+      <Great />
+      <Story />
+    </div>
   );
 };
 

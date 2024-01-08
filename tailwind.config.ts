@@ -35,6 +35,7 @@ const config = {
         },
         gra: {
           50: "#B7BABC",
+          60: "#F4F4F4",
         },
       },
       screens: {

@@ -7,7 +7,7 @@ export const metadata: Metadata = {
 const Page = () => {
   return (
     <div className="max-container padding-container pt-[120px] lg:pt-[155px]">
-      page
+      <h1>Page</h1>
     </div>
   );
 };
