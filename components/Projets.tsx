@@ -37,7 +37,7 @@ const Projets = () => {
         alt="stroke draw"
         className=" absolute bottom-0 left-0 -z-10"
       />
-      <div className="max-container padding-container mb-20">
+      <div className="max-container padding-container mb-10 md:mb-20">
         <Reveal>
           <h2 className="semi-bold-32 md:semi-bold-76 flex items-center text-blu-50">
             <span>
