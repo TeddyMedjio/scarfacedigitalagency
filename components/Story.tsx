@@ -3,7 +3,7 @@ import React from "react";
 
 const Story = () => {
   return (
-    <div className="my-20 relative">
+    <div className="my-20 relative max-container padding-container">
       <Image
         src="/blur.svg"
         height={834}

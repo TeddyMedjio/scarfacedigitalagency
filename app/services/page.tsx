@@ -1,3 +1,5 @@
+import Meett from "@/components/Meett";
+import Services from "@/components/Services";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -6,8 +8,9 @@ export const metadata: Metadata = {
 
 const Page = () => {
   return (
-    <div className="max-container padding-container pt-[120px] lg:pt-[155px]">
-      <h1>Page</h1>
+    <div className="pt-[120px] lg:pt-[155px]">
+      <Meett />
+      <Services />
     </div>
   );
 };

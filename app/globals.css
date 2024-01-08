@@ -32,6 +32,7 @@ body {
   }
 
   /* FONTS */
+
   .regular-14 {
     @apply text-[14px] font-[400];
   }
@@ -85,6 +86,9 @@ body {
 
   .bold-29 {
     @apply text-[29.12px] font-[700];
+  }
+  .bold-47 {
+    @apply text-[47.12px] font-[700];
   }
 
   .bold-76 {

@@ -3,7 +3,7 @@ import React from "react";
 
 const Slide = () => {
   return (
-    <div className="lg:py-20 slider overflow-hidden">
+    <div className="slider overflow-hidden">
       <div className="slide-track">
         {/* slide 9 */}
         <div className="slide">

@@ -24,10 +24,16 @@ const Dropdown = () => {
       >
         <button
           onClick={() => setToggle(!toggle)}
-          className="medium-29 ml-10 mt-10"
+          className="medium-18 ml-10 mt-10 bg-green-50 p-4 rounded-full"
         >
-          X
+          <Image src="/close.svg" height={20} width={20} alt="icon close" />
         </button>
+        <Link
+          href="mailto:hello@medjio.me"
+          className="btn_dark absolute right-5 top-12"
+        >
+          Contact Us
+        </Link>
         <ul className="mt-20 ml-10 flex flex-col -z-50">
           <p className="medium-18 text-gray-400 mb-10 uppercase">Menu</p>
           {NAV_LINKS.map((link) => (
@@ -51,7 +57,7 @@ const Dropdown = () => {
           height={250}
           width={300}
           alt="graph"
-          className="absolute bottom-0 top-0 right-10 -z-10"
+          className="absolute bottom-0 top-0 right-10 -z-10 "
         />
       </div>
     </div>

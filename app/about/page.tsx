@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 
 const Page = () => {
   return (
-    <div className="max-container padding-container pt-[120px] lg:pt-[155px]">
+    <div className="pt-[120px] lg:pt-[155px]">
       <Great />
       <Story />
       <Principle />

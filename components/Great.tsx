@@ -4,7 +4,7 @@ import React from "react";
 
 const Great = () => {
   return (
-    <section>
+    <section className="max-container padding-container ">
       <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-10 mb-10">
         <div className=" space-y-5 flex-initial w-full ">
           <Image
