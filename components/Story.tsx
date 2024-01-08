@@ -3,7 +3,14 @@ import React from "react";
 
 const Story = () => {
   return (
-    <div className="my-20">
+    <div className="my-20 relative">
+      <Image
+        src="/blur.svg"
+        height={834}
+        width={852}
+        alt="blur color"
+        className=" absolute top-10 right-0 -z-10"
+      />
       <div>
         <h2 className="semi-bold-47 md:semi-bold-76 flex items-center text-blu-50">
           <span>
