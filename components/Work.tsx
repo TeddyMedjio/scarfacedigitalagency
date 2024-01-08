@@ -3,6 +3,7 @@
 import { WORK } from "@/constants";
 import Image from "next/image";
 import { useState } from "react";
+import { Reveal } from "./Reveal";
 
 const Work = () => {
   const [loading, setLoading] = useState(2);
@@ -36,19 +37,22 @@ const Work = () => {
         className=" absolute bottom-0 left-0 -z-10"
       />
       <div className="max-container padding-container mb-20">
-        <h2 className="semi-bold-32 md:semi-bold-76 flex items-center text-white">
-          <span>
-            <Image
-              src="/graph.svg"
-              height={72}
-              width={25}
-              alt="icon logo"
-              className=" mr-4 md:mr-8 h-[52px] md:h-[72px] "
-            />
-          </span>
-          Our Recent <span className="text-green-50 ml-3">Work</span>
-        </h2>
+        <Reveal>
+          <h2 className="semi-bold-32 md:semi-bold-76 flex items-center text-white">
+            <span>
+              <Image
+                src="/graph.svg"
+                height={72}
+                width={25}
+                alt="icon logo"
+                className=" mr-4 md:mr-8 h-[52px] md:h-[72px] "
+              />
+            </span>
+            Our Recent <span className="text-green-50 ml-3">Work</span>
+          </h2>
+        </Reveal>
       </div>
+
       <div className=" grid grid-cols-1 md:grid-cols-2 gap-20 max-container padding-container">
         {slice.map((link) => (
           <div key={link.title} className=" space-y-5 pb-10">
@@ -68,6 +72,7 @@ const Work = () => {
           </div>
         ))}
       </div>
+
       <div className="flex items-center justify-center pb-10 pt-20">
         <button
           className="medium-18 text-blu-50 bg-green-50 animate-pulse px-5 py-2 rounded-full"

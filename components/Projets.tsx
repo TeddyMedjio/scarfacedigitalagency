@@ -4,6 +4,7 @@ import { WORK } from "@/constants";
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
+import { Reveal } from "./Reveal";
 
 const Projets = () => {
   const [loading, setLoading] = useState(4);
@@ -37,19 +38,21 @@ const Projets = () => {
         className=" absolute bottom-0 left-0 -z-10"
       />
       <div className="max-container padding-container mb-20">
-        <h2 className="semi-bold-32 md:semi-bold-76 flex items-center text-blu-50">
-          <span>
-            <Image
-              src="/graph.svg"
-              height={72}
-              width={25}
-              alt="icon logo"
-              className=" mr-4 md:mr-8 h-[52px] md:h-[72px] "
-            />
-          </span>
-          Our Recent{" "}
-          <span className="text-blu-50 md:text-green-50 ml-3">Work</span>
-        </h2>
+        <Reveal>
+          <h2 className="semi-bold-32 md:semi-bold-76 flex items-center text-blu-50">
+            <span>
+              <Image
+                src="/graph.svg"
+                height={72}
+                width={25}
+                alt="icon logo"
+                className=" mr-4 md:mr-8 h-[52px] md:h-[72px] "
+              />
+            </span>
+            Our Recent{" "}
+            <span className="text-blu-50 md:text-green-50 ml-3">Work</span>
+          </h2>
+        </Reveal>
       </div>
       <div className=" grid grid-cols-1 md:grid-cols-2 gap-20 max-container padding-container pb-14 ">
         {slice.map((link) => (
