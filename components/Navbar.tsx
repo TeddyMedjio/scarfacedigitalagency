@@ -27,7 +27,7 @@ const Navbar = () => {
       className={
         navbar
           ? " w-full pt-[120px] fixed top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-50 backdrop-blur-sm bg-white/25 transition-all duration-300 ease-in-out"
-          : "max-container w-full mt-[60px] fixed top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-50"
+          : " w-full mt-[60px] fixed top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-50"
       }
     >
       <div className="max-container flex items-center justify-between w-full pb-4 padding-container">
@@ -43,14 +43,14 @@ const Navbar = () => {
           {NAV_LINKS.map((link) => (
             <li
               key={link.key}
-              className="regular-18 text-blu-50 cursor-pointer pb.1.5 transition-all duration-500 hover:bg-[#A7F400] px-3 py-1 rounded-lg"
+              className="regular-18 text-blu-50 cursor-pointer pb-[1.5px] transition-all duration-500 hover:bg-[#A7F400] px-3 py-1 rounded-lg"
             >
               <Link
                 href={link.href}
                 key={link.key}
                 className={`link ${
                   pathname === `${link.href}`
-                    ? "font-bold transition-all duration-500 bg-[#A7F400]  px-4 py-1 rounded-lg"
+                    ? "font-bold transition-all duration-500 bg-[#A7F400] px-4 py-1 rounded-lg"
                     : ""
                 }`}
               >
@@ -67,9 +67,7 @@ const Navbar = () => {
           Contact
         </Link>
       </div>
-      <div className="max-container px-0 lg:px-20 2xl:px-0">
-        <div className="h-[1px] w-full bg-blu-50 "></div>
-      </div>
+      <div className="h-[1px] w-full bg-blu-50 "></div>
     </nav>
   );
 };

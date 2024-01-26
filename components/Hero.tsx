@@ -4,8 +4,8 @@ import { Reveal } from "./Reveal";
 const Hero = () => {
   return (
     <section className=" bg-green-50">
-      <Reveal>
-        <div className="max-container padding-container pt-[120px] lg:pt-[155px]">
+      <Reveal width="100%">
+        <div className="mx-auto max-container padding-container pt-[120px] lg:pt-[155px]">
           <div className="flex flex-col lg:flex-row lg:items-center relative">
             <Image
               className="hidden md:block rounded-tl-lg rounded-tr-[100px] rounded-bl-[4px] rounded-br-[4px] lg:absolute"
@@ -42,7 +42,7 @@ const Hero = () => {
           </div>
         </div>
       </Reveal>
-      <Reveal>
+      <Reveal width="100%">
         <div className="max-container padding-container mb-10">
           <p className="regular-14 md:regular-18 text-blu-50 max-w-[801px] lg:py-10">
             <span className="bold-18">Scarface Digital Agency</span> - is a
