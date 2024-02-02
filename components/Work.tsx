@@ -4,6 +4,7 @@ import { WORK } from "@/constants";
 import Image from "next/image";
 import { useState } from "react";
 import { Reveal } from "./Reveal";
+import Link from "next/link";
 
 const Work = () => {
   const [loading, setLoading] = useState(2);
@@ -55,15 +56,17 @@ const Work = () => {
 
       <div className=" grid grid-cols-1 md:grid-cols-2 gap-20 max-container padding-container">
         {slice.map((link) => (
-          <div key={link.title} className=" space-y-5 pb-10">
+          <div key={link.title} className=" space-y-5 pb-10 relative group">
             <p className="bold-29 text-white">{link.title}</p>
-            <Image
-              src={link.img}
-              width={628}
-              height={392}
-              alt="preview image"
-              className=" rounded w-full "
-            />
+            <Link href={link.lien} target="_blank" className="">
+              <Image
+                src={link.img}
+                width={628}
+                height={392}
+                alt="preview image"
+                className=" rounded w-full "
+              />
+            </Link>
             <div className="relative">
               <p className="medium-18 text-white bg-green-60 px-5 py-2 rounded-full border border-green-50 absolute">
                 {link.description}

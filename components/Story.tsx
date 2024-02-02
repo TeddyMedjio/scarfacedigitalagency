@@ -49,28 +49,28 @@ const Story = () => {
             </p>
 
             <div className="space-y-10 space-x-0 mt-10 md:mt-20 md:space-y-0 md:space-x-10 flex flex-col md:flex-row md:items-center">
-              <div>
+              {/* <div>
                 <p className="bold-18 text-blu-50">Mutius A. Fagbile</p>
                 <p className="medium-18 text-blu-50">Co-Founder</p>
-              </div>
-              <div>
+              </div> */}
+              {/* <div>
                 <p className="bold-18 text-blu-50">N. Jean Claude</p>
-                <p className="medium-18 text-blu-50">Co-Founder</p>
-              </div>
+                <p className="medium-18 text-blu-50">Founder</p>
+              </div> */}
             </div>
           </div>
         </div>
       </Reveal>
 
       {/* animation */}
-      <div className="my-28">
+      {/* <div className="my-28">
         <Image
           src="/pointille.svg"
           height={170}
           width={1274}
           alt="separation"
         />
-      </div>
+      </div> */}
     </div>
   );
 };
