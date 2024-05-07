@@ -6,7 +6,7 @@ import Link from "next/link";
 import { useState } from "react";
 import { Reveal } from "./Reveal";
 
-const Projets = () => {
+const Work = () => {
   const [loading, setLoading] = useState(4);
 
   const showMore = () => {
@@ -87,4 +87,4 @@ const Projets = () => {
   );
 };
 
-export default Projets;
+export default Work;
