@@ -21,10 +21,10 @@ export const WORK = [
     lien: "https://www.em-marketing.ch/",
   },
   {
-    title: "InfinyEvent",
-    img: "/infinyevent.jpg",
-    description: "UI/UX Design • Branding ",
-    lien: "https://alwaysevents.vercel.app/",
+    title: "Disney Plus",
+    img: "/disney.jpg",
+    description: "UI/UX Design • Website ",
+    lien: "https://disneyplus-amber.vercel.app/",
   },
   {
     title: "OZ Coiffure",
